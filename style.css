@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+#main {
+  display: flex;
+}
+#side_bar {
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #DBDBDB;
+  min-width: 180px;
+}
+#side_bar > img {
+  width: 103px;
+  height: 29px;
+  margin: 40px 0px 0px 24px;
+}
+#side_bar > ul {
+  list-style-type: none;
+  margin-top: 30px;
+}
+#side_bar > ul > li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+#side_bar > ul > li > img {
+  padding-right: 16px;
+}
+#scrolling_container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 30px;
+  position: relative;
+}
+.stories {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: 30px;
+}
+.story_image > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.story_image {
+  background-image: url(./assets/logoback.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+}
+.story_image > p {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #262626;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer_links{
+  margin-top: 24px;
+}
+footer {
+  width: 319px;
+  position: absolute;
+  top:80px;
+  right:46px;
+}
+.userprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userprofileleft {
+  display: flex;
+  align-items: center;
+}
+.userprofileleft > img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-right: 17px;
+}
+.userprofileleft > div > h4 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+.userprofileleft > div > p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #8e8e8e;
+}
+.userprofile > a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: #0095f6;
+  padding-inline: 20px;
+}
+.suggestion {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.suggestion > h5 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #8e8e8e;
+}
+.suggestion > a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: #262626;
+}
+.user_suggestion_left > p {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #8e8e8e;
+}
+.user_suggestion_left > h5 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+.user_suggestion > a {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.user_suggestion{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 60px;
+}
+.user_suggestion_one{
+  display: flex;
+  align-items: center;
+}
+.user_suggestion_left{
+  margin-left:10px;
+}
+.user_suggestion_one>img{
+  width: 36px;
+  height: 40px;
+}
+.footer_link>a{
+  font-family: Roboto;
+font-size: 11px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: #C7C7C7;
+text-decoration: none;
+}
+#foot{
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #C7C7C7;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.post_header{
+  width:460px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px 8px 5px;
+  margin-top: 12px;
+}
+.post_header_left{
+  display: flex;
+  align-items: center;
+}
+.post_header>img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.header_left{
+  background-image: url(./assets/header_back.svg);
+  width: 40px;
+  height:40px;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username
+{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.post{
+  margin-left: 10%;
+  width:460px;
+  height: 808px;
+  margin-top:33px;
+
+}
+.post_image>img{
+  box-sizing: border-box;
+  width: 460px;
+}
+.post_icon{
+  display: flex;
+  justify-content: space-between;
+}
+.post_icon_left>img{
+  padding-right:10px;
+  margin: 4px;
+}
+.like_view{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  margin-top:7px;  
+}
+.bold{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+text-align: left;
+color: #262626;
+}
+.view{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #262626;
+margin-top: 7px;
+}
+.trans
+{
+  font-family: Roboto;
+font-size: 12px;
+font-weight: 600;
+line-height: 16px;
+text-align: left;
+color: #262626;
+margin-top: 6px;
+}
+.comment{
+  font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #8E8E8E;
+margin-top: 6px;
+}
+.addcomment{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #262626;
+}
+.type>img{
+  width: 16px;
+height: 16px;
+}
+.type>div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+@media screen and (max-width:1235px){
+  footer{
+  display: none;
+  }
+  .post{
+    margin-left: 5%;
+  }
+}
